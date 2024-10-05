@@ -103,7 +103,7 @@ target_include_directories(
 add_custom_target(other SOURCES ${SOPHUS_OTHER_FILES} ${SOPHUS_HEADER_FILES})
 
 # Create 'test' make target using ctest
-option(BUILD_SOPHUS_TESTS "Build tests." ON)
+option(BUILD_SOPHUS_TESTS "Build tests." OFF)
 if(BUILD_SOPHUS_TESTS)
   enable_testing()
   add_subdirectory(test)
